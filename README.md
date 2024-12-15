@@ -15,7 +15,7 @@ To get started with the project, follow these steps to clone the repository and 
 ### 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/JaymeeCasabuena/BookLovers-Angular.git
+    git clone https://github.com/JaymeeCasabuena/Alpaca-Generator.git
     cd alpaca-image-generator
     ```
 
