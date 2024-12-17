@@ -36,7 +36,7 @@ export default function Home() {
                 <section className="flex flex-wrap justify-center gap-8 md:gap-16">
                     <div
                         id="print"
-                        className="custom-border relative h-64 w-64 md:h-[600px] md:w-[600px]"
+                        className="custom-border relative h-64 w-64 md:h-[400px] md:w-[400px]"
                     >
                         <AlpacaImage state={state} />
                     </div>

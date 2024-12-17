@@ -17,64 +17,64 @@ const AlpacaImage = ({ state }) => {
             <Image
                 src={backgroundURL}
                 alt="background"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 priority
                 className="absolute"
             />
             <Image
                 src={neckURL}
                 alt="neck"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 priority
                 className="absolute"
             />
             <Image
                 src="/nose.png"
                 alt="nose"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 priority
                 className="absolute"
             />
             <Image
                 src={hairURL}
                 alt="hair"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 priority
                 className="absolute"
             />
             <Image
                 src={eyesURL}
                 alt="eyes"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 priority
                 className="absolute"
             />
             <Image
                 src={earsURL}
                 alt="ears"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 priority
                 className="absolute"
             />
             <Image
                 src={legURL}
                 alt="leg"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 priority
                 className="absolute"
             />
             <Image
                 src={mouthURL}
                 alt="mouth"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 priority
                 className="absolute"
             />
@@ -82,8 +82,8 @@ const AlpacaImage = ({ state }) => {
                 <Image
                     src={accesoriesURL}
                     alt="accesories"
-                    width={600}
-                    height={600}
+                    width={400}
+                    height={400}
                     priority
                     className="absolute"
                 />
