@@ -1,23 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --color-blue: #5396f6;
+    --color-dark-blue: #2a7af3;
+    --color-gray: #cccccc;
+    --color-red: #e85d23;
+    --color-dark-red: #cb4c12;
+    --color-yellow: #ffea64;
+    --color-dark-yellow: #fddd50;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--color-yellow);
+    background-image: radial-gradient(
+            var(--color-dark-yellow) 20%,
+            transparent 0
+        ),
+        radial-gradient(var(--color-dark-yellow) 20%, transparent 0);
+    background-size: 20px 20px;
+    background-position:
+        0 0,
+        10px 10px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2em;
+}
+
+.button {
+    --normal-bg-color: var(--color-blue);
+    --normal-text-color: white;
+    --active-bg-color: var(--color-dark-blue);
+    --active-text-color: var(--color-gray);
+
+    cursor: pointer;
+    font-size: 0.9em;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    border-radius: 2em;
+    box-shadow:
+        inset 1px 1px 1px 1px white,
+        1px 1px 1px 1px black;
+    border: 0.1em solid black;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--normal-bg-color);
+    letter-spacing: -1px;
+    -webkit-text-stroke: 2px black;
+    font-weight: 900;
+    color: var(--normal-text-color);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+    justify-content: center;
+    transition: all 0.1s;
+}
+
+.button > svg {
+    width: 0.8em;
+    pointer-events: none;
+}
+
+.button:hover,
+.button:focus {
+    transform: translate(0, 1px);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.button:active {
+    transform: translate(0, 3px);
+    border-color: rgba(0, 0, 0, 0);
+    color: var(--active-text-color);
+    background-color: var(--color-dark-red);
+    box-shadow:
+        inset 3px 3px 1px 1px black,
+        1px 1px 1px 1px black;
+}
+
+.button.red {
+    --normal-bg-color: var(--color-red);
+    --active-bg-color: var(--color-dark-red);
+}
+
+.custom-border {
+    border-radius: 0.5em;
+    box-shadow:
+        inset 1px 1px 1px 1px white,
+        1px 1px 1px 1px black;
+    border: 0.1em solid black;
 }

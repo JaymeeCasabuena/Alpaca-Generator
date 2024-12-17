@@ -14,16 +14,79 @@ const AlpacaImage = ({ state }) => {
     const accesoriesURL = `/accessories/${accesories}.png`;
     return (
         <>
-            <Image src={backgroundURL} alt="background" width={400} height={400} priority className="absolute"/>
-            <Image src={neckURL} alt="neck" width={400} height={400} priority className="absolute" />
-            <Image src="/nose.png" alt="nose" width={400} height={400} priority className="absolute" />
-            <Image src={hairURL} alt="hair" width={400} height={400} priority className="absolute" />
-            <Image src={eyesURL} alt="eyes" width={400} height={400} priority className="absolute" />
-            <Image src={earsURL} alt="ears" width={400} height={400} priority className="absolute" />
-            <Image src={legURL} alt="leg" width={400} height={400} priority className="absolute" />
-            <Image src={mouthURL} alt="mouth" width={400} height={400} priority className="absolute" />
+            <Image
+                src={backgroundURL}
+                alt="background"
+                width={600}
+                height={600}
+                priority
+                className="absolute"
+            />
+            <Image
+                src={neckURL}
+                alt="neck"
+                width={600}
+                height={600}
+                priority
+                className="absolute"
+            />
+            <Image
+                src="/nose.png"
+                alt="nose"
+                width={600}
+                height={600}
+                priority
+                className="absolute"
+            />
+            <Image
+                src={hairURL}
+                alt="hair"
+                width={600}
+                height={600}
+                priority
+                className="absolute"
+            />
+            <Image
+                src={eyesURL}
+                alt="eyes"
+                width={600}
+                height={600}
+                priority
+                className="absolute"
+            />
+            <Image
+                src={earsURL}
+                alt="ears"
+                width={600}
+                height={600}
+                priority
+                className="absolute"
+            />
+            <Image
+                src={legURL}
+                alt="leg"
+                width={600}
+                height={600}
+                priority
+                className="absolute"
+            />
+            <Image
+                src={mouthURL}
+                alt="mouth"
+                width={600}
+                height={600}
+                priority
+                className="absolute"
+            />
             {accesories !== 'none' && (
-                <Image src={accesoriesURL} alt="accesories" width={400} height={400} priority className="absolute" />
+                <Image
+                    src={accesoriesURL}
+                    alt="accesories"
+                    width={600}
+                    height={600}
+                    priority
+                    className="absolute"
+                />
             )}
         </>
     );
