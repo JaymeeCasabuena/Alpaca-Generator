@@ -31,7 +31,8 @@
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
+    padding-inline: 1em;
+    padding-block: 0.5em;
     background-color: var(--color-yellow);
     background-image: radial-gradient(
             var(--color-dark-yellow) 20%,
@@ -47,6 +48,16 @@ body {
     grid-template-rows: 1fr 2em;
 }
 
+.header-text {
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: -1px;
+    -webkit-text-stroke: 2px black;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
 .button {
     --normal-bg-color: var(--color-blue);
     --normal-text-color: white;
@@ -54,7 +65,7 @@ body {
     --active-text-color: var(--color-gray);
 
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 1.2em;
     padding-inline: 1em;
     padding-block: 0.5em;
     border-radius: 2em;
@@ -81,8 +92,8 @@ body {
     pointer-events: none;
 }
 
-.button:hover,
-.button:focus {
+button:hover,
+button:focus {
     transform: translate(0, 1px);
     border-color: rgba(0, 0, 0, 0);
 }
