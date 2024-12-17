@@ -15,7 +15,7 @@ export default function Home() {
 
     const printImage = async () => {
         const element = document.getElementById('print');
-        const canvas = await html2canvas(element);
+        const canvas = await html2canvas(element, { scale: 2 });
         const data = canvas.toDataURL('image/jpg');
         const link = document.createElement('a');
 
@@ -42,7 +42,7 @@ export default function Home() {
                     </div>
                     <div className="flex w-full flex-col gap-2 px-4 md:w-[580px] md:px-16">
                         <h2 className="text-center font-extrabold md:text-start">
-                            ACCESORIZE THE ALPACAS
+                            ACCESORIZE THE ALPACA
                         </h2>
                         <ul className="my-2 flex flex-wrap justify-center gap-2 md:justify-start md:text-lg">
                             {parts.map((part, index) => (
